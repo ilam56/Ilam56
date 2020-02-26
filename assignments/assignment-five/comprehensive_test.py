@@ -108,12 +108,12 @@ def test_submit_assignment(grading_stu):
 #Test on_time in Student class to make sure it  returns correct values
 def test_check_ontime(grading_stu):
     #check several cases that could occur. I don't think this covers all cases but it covers many.
-    assert grading_stu.check_ontime('2/22/11','1/11/22') == True
+    assert grading_stu.check_ontime('2/12/11','1/11/22') == True
     assert grading_stu.check_ontime('1/11/21', '2/11/21') == True
     assert grading_stu.check_ontime('29/10/21', '2/11/21') == True
     assert grading_stu.check_ontime('1/11/21', '29/10/21') == False
     assert grading_stu.check_ontime('2/11/21', '1/11/21') == False
-    assert grading_stu.check_ontime('1/11/22', '2/22/11') == False
+    assert grading_stu.check_ontime('1/11/22', '2/12/11') == False
     
 #Test to see if check_grades  in Student class returns correct grades for user    
 def test_check_grades(grading_stu):
