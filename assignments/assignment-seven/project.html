@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <title>Rough Draft</title>
+        <link rel="stylesheet" type="text/css" href="project.css">
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script> 
+        <script src="project.js"></script>
+    </head>
+    <body>
+        <div id="pageheader">
+            <label for="repo_group" class="dropLabel">Repo Group</label>
+            <select id="repo_group" class ="dropdown" onchange="setRepoGroup()">
+                <option value="NULL" selected>---</option>
+                <option value="test">test</option>
+            </select>
+      
+            <label for="repo" class="dropLabel">Repo</label>
+            <select id="repo" class="dropdown" onchange="setRepoGroup()">
+                <option value="NULL" selected>---</option>
+            </select>
+        </div>
+        <div id="navDiv">
+            <ul class = "navul">
+                <li class = "navlist" onclick ='show("intro")'>Welcome</li>
+                <li class = "navlist" onclick ='show("topcommiters")'>Top Commiters</li>
+                <li class = "navlist">Issues Active</li>
+                <li class = "navlist">Summary</li>
+            </ul>
+        </div>
+        <div id="intro" class="page">
+            <h1 class="subheader">Welcome</h1>
+            <h2 class="subheader2">A Visualization of Augur Data by:</h2>
+            <ul class="list">
+                <li class="listitem">Ian Anderson</li>
+                <li class="listitem">Andrew Cox</li>
+                <li class="listitem">Thunnathorne Synhiranakkrakul</li>
+            </ul>
+        </div>
+        <div id="topcommiters" class="page hidden">
+            <h1 class="subheader">Top Commiters</h1>
+            <div id="commitpiechart"></div>
+        </div>
+    </body>
+</html>
