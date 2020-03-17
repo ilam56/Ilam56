@@ -7,16 +7,15 @@
         <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script> 
         <script src="project.js"></script>
     </head>
-    <body>
+    <body onload ="initialize()">
         <div id="pageheader">
             <label for="repo_group" class="dropLabel">Repo Group</label>
             <select id="repo_group" class ="dropdown" onchange="setRepoGroup()">
-                <option value="NULL" selected>---</option>
-                <option value="test">test</option>
+                <option value="NULL" selected>Loading...</option>
             </select>
       
             <label for="repo" class="dropLabel">Repo</label>
-            <select id="repo" class="dropdown" onchange="setRepoGroup()">
+            <select id="repo" class="dropdown" onchange="setRepo()">
                 <option value="NULL" selected>---</option>
             </select>
         </div>
@@ -25,7 +24,7 @@
                 <li class = "navlist" onclick ='show("intro")'>Welcome</li>
                 <li class = "navlist" onclick ='show("topcommiters")'>Top Commiters</li>
                 <li class = "navlist">Issues Active</li>
-                <li class = "navlist">Summary</li>
+                <li class = "navlist" onclick ='show("summary")'>Summary</li>
             </ul>
         </div>
         <div id="intro" class="page">
@@ -40,6 +39,12 @@
         <div id="topcommiters" class="page hidden">
             <h1 class="subheader">Top Commiters</h1>
             <div id="commitpiechart"></div>
+        </div>
+        <div id="summary" class="page hidden">
+            <h1 class="subheader">Summary</h1>
+            <div id="summaryDiv">
+                <p id="summaryInfo"></p>
+            </div>
         </div>
     </body>
 </html>
