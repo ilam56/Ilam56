@@ -23,7 +23,7 @@
             <ul class = "navul">
                 <li class = "navlist" onclick ='show("intro")'>Welcome</li>
                 <li class = "navlist" onclick ='show("topcommiters")'>Top Commiters</li>
-                <li class = "navlist">Issues Active</li>
+                <li class = "navlist" onclick ='show("issues")'>Issues Active</li>
                 <li class = "navlist" onclick ='show("summary")'>Summary</li>
             </ul>
         </div>
@@ -36,6 +36,11 @@
                 <li class="listitem">Thunnathorne Synhiranakkrakul</li>
             </ul>
         </div>
+        <div id="issues" class="page hidden">
+            <h1 class="subheader">Issues Active</h1>
+            <div id="issuechart"></div>
+            <p id="issuep"></p>
+        </div>
         <div id="topcommiters" class="page hidden">
             <h1 class="subheader">Top Commiters</h1>
             <div id="commitpiechart"></div>
@@ -43,7 +48,32 @@
         <div id="summary" class="page hidden">
             <h1 class="subheader">Summary</h1>
             <div id="summaryDiv">
-                <p id="summaryInfo"></p>
+                <table id="summaryTable">
+                    <tr>
+                        <th>Watcher Count</th>
+                        <th id ="watcher">--</th>
+                    </tr>
+                    <tr>
+                        <th>Stars Count</th>
+                        <th id ="stars">--</th>
+                    </tr>
+                    <tr>
+                        <th>Fork Count</th>
+                        <th id ="fork">--</th>
+                    </tr>
+                    <tr>
+                        <th>Merged Count Count</th>
+                        <th id ="merged">--</th>
+                    </tr>
+                    <tr>
+                        <th>Committer Count</th>
+                        <th id ="committer">--</th>
+                    </tr>
+                    <tr>
+                        <th>Commit Count</th>
+                        <th id ="commit">--</th>
+                    </tr>
+                </table>
             </div>
         </div>
     </body>

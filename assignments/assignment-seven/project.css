@@ -1,4 +1,25 @@
+#summaryTable{
+    margin: auto;
+    width: 550px;
+    text-align: left;
+    border-spacing: 15px;
+}
 
+
+
+#commitpiechart {
+    margin: auto;
+    width: 550px;
+}
+
+#issuechart {
+    margin: auto;
+    width: 700px;
+}
+
+#issuep {
+    font-size: 20px;
+}
 
 html {
     height: 100%;
@@ -16,6 +37,7 @@ body {
     background-color: aliceblue;
     margin: 0px;
     padding: 0px;
+    overflow: hidden;
 }
 
 .dropdown {
@@ -39,6 +61,7 @@ body {
     padding: 0px;
     margin: 0px;
     display: inline-block;
+    overflow: hidden;
 }
 
 .navul {
@@ -61,7 +84,6 @@ body {
     display: inline-block;
     margin-top: 20px;
     padding: 0px;
-    height: 90%;
     text-align: center;
     width: 85%;
     float: right;
