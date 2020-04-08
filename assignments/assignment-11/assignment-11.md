@@ -1,7 +1,7 @@
 # Ian Anderson
 
 ## Working Group: Evolution
-I attended April 7 at 11am: General CHAOSS Weekly Call and intend to attend April 8 at 9am CDT: Evolution Working Group
+I attended April 7 at 11am: General CHAOSS Weekly Call
 
 ## Podcast reflections:
   In the first section of the podcast I found Matt's story about corporate involvement in open source project to be interesting. Open source projects seems like the sort of thing that would be difficult to manage and quality check to the level most companies would want. It is interesting to think about how corporations might go about being involved in open source projects. The other origin stories where interesting as well. hearing about how each of the different people viewed and interacted with CHOASS in their jobs and lives provided more insight into the purpose of the project. In particular the people seemed to emphasise the increasing importance and complexity of open source projects in recent times.
