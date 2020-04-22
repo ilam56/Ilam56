@@ -1,7 +1,7 @@
 # demo-signin
 
-a [Sails v1](https://sailsjs.com) application
-A sails application. to run:
+a [Sails v1](https://sailsjs.com) application.
+to run:
 - install sails with "npm install sails -g"
 - move to directroy of project
 - use the "sails lift" command
