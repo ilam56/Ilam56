@@ -1,7 +1,12 @@
 # demo-signin
 
 a [Sails v1](https://sailsjs.com) application
+A sails application. to run:
+- install sails with "npm install sails -g"
+- move to directroy of project
+- use the "sails lift" command
 
+I just built the sample project and havent figured out how to edit it yet. Note For some reason it is not letting me push the node_modules folder of the project. Because of this I doubt the project will run from the files available on github. I will talk to teacher later to figure out what the problem is.
 
 ### Links
 
