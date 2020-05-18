@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <title>Survey</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/survey.css') }}">
+    </head>
+    <body>
+        <div id="mainWrap">
+            <h1>Welcome!</h1>
+            <h2>Please take the following survey:</h2>
+            <hr>
+            <form id="mainform" action ="/results" method="POST">
+                <p class="radioHeader">Which of these fruits is your favorite</p>
+                <input type="radio" id="apple" name="fruit" value="apple">
+                <label for="apple">Apple</label><br>
+                <input type="radio" id="orange" name="fruit" value="orange">
+                <label for="orange">Orange</label><br>
+                <input type="radio" id="kiwi" name="fruit" value="kiwi">
+                <label for="kiwi">Kiwi</label><br>
+                <input type="radio" id="strawberry" name="fruit" value="strawberry">
+                <label for="strawerry">Strawberry</label><br>
+                
+                <p class="radioHeader">Are you a vegan?</p>
+                <input type="radio" id="veganyes" name="vegan" value="yes">
+                <label for="veganyes">Yes</label><br>
+                <input type="radio" id="veganno" name="vegan" value="no">
+                <label for="veganno">No</label><br>
+                
+                <p class="radioHeader">How often do you eat snacks?</p>
+                <input type="radio" id="snacks1" name="snacks" value="0">
+                <label for="snacks1">Never</label><br>
+                <input type="radio" id="snacks2" name="snacks" value="1">
+                <label for="snacks2">Once per day</label><br>
+                <input type="radio" id="snacks3" name="snacks" value="2-3">
+                <label for="snacks3">Two-Three times per day</label><br>
+                <input type="radio" id="snacks4" name="snacks" value="4+">
+                <label for="snacks4">Four+ time per day</label><br>                
+                <input id="submitbtn" type="submit" value="Submit">
+            </form>
+        </div>
+    </body>
+</html>
