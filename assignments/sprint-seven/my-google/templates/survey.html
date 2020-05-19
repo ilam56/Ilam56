@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <title>Survey</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/survey.css') }}">
+    </head>
+    <body>
+        <div id="mainWrap">
+            <h1>Welcome!</h1>
+            <h2>Please take the following survey:</h2>
+            <hr>
+            <form id="mainform" action ="/results" method="POST">
+                <p class="radioHeader">Which of these fruits is your favorite</p>
+                <input type="radio" id="apple" name="fruit" value="Apple">
+                <label for="apple">Apple</label><br>
+                <input type="radio" id="orange" name="fruit" value="Orange">
+                <label for="orange">Orange</label><br>
+                <input type="radio" id="kiwi" name="fruit" value="Kiwi">
+                <label for="kiwi">Kiwi</label><br>
+                <input type="radio" id="strawberry" name="fruit" value="Strawberry">
+                <label for="strawerry">Strawberry</label><br>
+                
+                <p class="radioHeader">Are you a vegan?</p>
+                <input type="radio" id="veganyes" name="vegan" value="Yes">
+                <label for="veganyes">Yes</label><br>
+                <input type="radio" id="veganno" name="vegan" value="No">
+                <label for="veganno">No</label><br>
+                
+                <p class="radioHeader">How often do you eat snacks?</p>
+                <input type="radio" id="snacks1" name="snacks" value="Never">
+                <label for="snacks1">Never</label><br>
+                <input type="radio" id="snacks2" name="snacks" value="Once per day">
+                <label for="snacks2">Once per day</label><br>
+                <input type="radio" id="snacks3" name="snacks" value="Two-Three times per day">
+                <label for="snacks3">Two-Three times per day</label><br>
+                <input type="radio" id="snacks4" name="snacks" value="Four+ times per day">
+                <label for="snacks4">Four+ times per day</label><br>                
+                <input id="submitbtn" type="submit" value="Submit">
+            </form>
+            <a id="logoutLink" class="button" href="/logout">Logout</a>
+        </div>
+    </body>
+</html>

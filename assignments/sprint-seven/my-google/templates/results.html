@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <title>Survey Results</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/results.css') }}">
+    </head>
+    <body>
+        <div id="mainWrap">
+            <h1>View Results</h1>
+            <h2>These are common survey results:</h2>
+            <hr>
+            <div id="innerWrap">
+                <p class="radioHeader">Which of these fruits is your favorite</p>
+                <p id="q1r1" class="result">Apple: </p>
+                <p id="q1r2" class="result">Orange: </p>
+                <p id="q1r3" class="result">Kiwi: </p>
+                <p id="q1r4" class="result">Strawberry: </p>
+                <p id="mypick1" class="result">You picked: </p>
+                
+                <p class="radioHeader">Are you a vegan?</p>
+                <p id="q2r1" class="result">Yes: </p>
+                <p id="q2r2" class="result">No: </p>
+                <p id="mypick2" class="result">You picked: </p>
+                
+                <p class="radioHeader">How often do you eat snacks?</p>
+                <p id="q3r1" class="result">Never: </p>
+                <p id="q3r2" class="result">Once per day: </p>
+                <p id="q3r3" class="result">Two-Three times per day: </p>
+                <p id="q3r4" class="result">Four+ times per day: </p>
+                <p id="mypick3" class="result">You picked: </p>
+                
+            </div>
+        </div>
+    <script src="/static/jquery.js"></script>
+    <script src="/static/results.js"></script>
+    </body>
+</html>
