@@ -24,5 +24,45 @@ https://github.com/google/google-api-objectivec-client/issues/211
 ## Third(final) iteration
 I finally fixed the sql problems. I still am not sure what was wrong. At one point I fixed it only for it to break again despite me having not touched it. It also didn't seem to want me to have more than one ? in the query for some reason. It took countless tweaking and google searches before I finally found a workaround that worked. I am actually hoping to talk to you in the future to get some insight into the matter because I still don't know what went wrong really. After I fixed that issue I worked with the results display. It isn't a very complicated display, but It required quite a bit a AJAX which I had never used with flask. I found a few good tutorials and got it working out though. I did have some problems with scope though. My AJAX functions couldn't access my global dictionarys and arrays leading me having to do a pretty messy workaround of simply copying and pasting the AJAX request with the different answers. I would have liked to do more, but I already talking about that in the readme and goals section. Here are some of the links I used:
 
-Python:
+Python/Flask:
+https://data-flair.training/blogs/python-switch-case/
+https://www.w3schools.com/python/python_arrays.asp
+https://www.w3schools.com/python/python_conditions.asp
+https://pythonhow.com/add-css-to-flask-website/
+https://stackoverflow.com/questions/41144565/flask-does-not-see-change-in-js-file
+https://flask-login.readthedocs.io/en/latest/
+
+SQL:
+https://stackoverflow.com/questions/11821203/sqlite3-operationalerror-no-such-column-but-thats-not-a-column
+https://stackoverflow.com/questions/27857802/sqlite-error-no-such-column-python
+https://stackoverflow.com/questions/48541968/sqlite3-operationalerror-no-such-column-python
+https://stackoverflow.com/questions/10195139/how-to-retrieve-sql-result-column-value-using-column-name-in-python
+https://pynative.com/python-mysql-select-query-to-fetch-data/
+https://pbpython.com/selecting-columns.html
+https://stackoverflow.com/questions/16856647/sqlite3-programmingerror-incorrect-number-of-bindings-supplied-the-current-sta
+https://www.w3schools.com/sql/sql_select.asp
+
+AJAX/JavaScript:
+https://www.youtube.com/watch?v=IZWtHsM3Y5A
+https://www.youtube.com/watch?v=QKcVjdLEX_s
+https://stackoverflow.com/questions/37631388/how-to-get-data-in-flask-from-ajax-post
+https://stackoverflow.com/questions/36846784/ajax-get-request-not-working-with-flask
+https://flask.palletsprojects.com/en/1.1.x/patterns/jquery/
+https://www.bogotobogo.com/python/Flask/Python_Flask_with_AJAX_JQuery.php
+https://stackoverflow.com/questions/34671217/in-flask-what-is-request-args-and-how-is-it-used
+https://code-maven.com/slides/python-programming/flask-and-ajax-jquery
+https://pietschsoft.com/post/2015/09/05/javascript-basics-how-to-create-a-dictionary-with-keyvalue-pairs
+https://www.w3schools.com/js/js_arrays.asp
+https://www.w3schools.com/js/js_loop_for.asp
+
+
+
+
+
+
+
+
+
+
+
 
