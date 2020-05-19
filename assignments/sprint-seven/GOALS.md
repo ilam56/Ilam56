@@ -1,8 +1,8 @@
 ## Current state: 
-In its current state the app is just a simple google SSO example which displays extremely basic user information
+The app is working in a very minimal capacity. It has an example survey and SSO capability. It is not as good as I would like it and would likely be a bit slow once it gets more results. However, it works as a demo and properly records and displays results. Each user can take the example survey then see the total results from other users. The same user can choose to take the survey again, but it will override their previous results.
 
 ## Future goal:
-My goal it to create a basic survey app. This apps purpose is to allow the admin(me) to create various surveys which will be displayed on the webpage and will recieve user input and record the results. Thus the main purpose of the app is to record and display results of a basic survey from the users. To clarify, users will have the option to both take the survey as well as look at data results from that survey.
+My goal it to create a basic survey app. This apps purpose is to allow the admin(me) to create various surveys which will be displayed on the webpage and will recieve user input and record the results. Thus the main purpose of the app is to record and display results of a basic survey from the users. To clarify, users will have the option to both take the survey as well as look at data results from that survey. I have achieved the bare minumum of this goal but would like that app to be better designed if I had more time. I would, for example, like to format the survey better so that it is easier to change. I would also like to fix the messy javascript that I cobbled together and make it better. In addition, I ran into several problems with sql that forced me to use work arounds that I don't consider to be efficient, and I would like to fix that as well.
 
 ## Audiences:
 There could be considered to be two target audiences
